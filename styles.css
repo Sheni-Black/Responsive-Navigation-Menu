@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "MiSans";
+    src: url('MiSans-Normal.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-block: 1rem;
+    background-color: rgb(145, 77, 145);
+}
+
+a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border: 1px solid black;
+    padding-inline: 1.2rem;
+    padding-block: 0.7;
+    background-color: rgb(177, 177, 61);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1px 1px black;
+    text-align: center;
+}
+
+a:hover{
+    transform: scale(0.95);
+    transition: all 0.3s;
+}
+
+@media (max-width: 600px) {
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        padding-block: 1rem;
+        background-color: rgb(145, 77, 145);
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    a{
+        width: 90%;
+    }
+}
+
